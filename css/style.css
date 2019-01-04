@@ -1,7 +1,10 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700');
+*{
+	box-sizing: border-box;
+}
 body{
-	font-family: font-family:'Cuprum', sans-serif;
+	font-family: 'Cuprum', sans-serif; 'Cuprum', sans-serif;
 	font-size:100%;
 }
 p{
@@ -32,12 +35,59 @@ h5{
 h6{
 	font-size: 80%;
 }
-.raw{
+.row{
 	width: 980px;
 	margin: 0 auto;
+}
+.row:after{
+	content: "";
+	height: 0px;
+	display:block;
+	clear: both;
 }
 .hero{
 	background-image: url('../images/chica.jpg');
 	height: 450px;
-
+	background-size: cover;
 }
+header{
+	height: 85px;
+	padding: 30px 0 0;
+} 
+header .logo img{
+	border-right: 1px solid #ddd;
+}
+
+header nav ul li{
+	display: inline-block;
+}
+header nav ul li a{
+	display: block;
+	padding: 10px 20px 25px 20px;
+	text-align: center;
+	color: #646464;
+}
+header nav ul li a:hover{
+	color: #404040;
+	border-bottom: 3px solid #fe0000;
+}
+header .carrito a{
+	font-size: 150%;
+	color: #646464;
+	border:2px solid #646464;
+	padding: 5px 15px;
+	border-radius: 25px;
+	display: inline-block;
+}
+header .carrito{
+	float: right;
+}
+header .logo, header nav{
+	float: left;
+}
+header .carrito{
+	float: right;
+}
+
+
+
