@@ -35,5 +35,9 @@ h6{
 .raw{
 	width: 980px;
 	margin: 0 auto;
+}
+.hero{
+	background-image: url('../images/chica.jpg');
+	height: 450px;
 
 }
